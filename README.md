@@ -11,39 +11,36 @@ Resources
 
 ### Prerequisites
 
-Terraform ~> 0.12.28
+Terraform ~> 1.0.0
 
 ### Tested
 
-Terraform ~> 0.14.3
+Terraform ~> 1.0.9
 ### Installing
 
 This module should be called by a terraform environment configuration
 ```  
-    source  =   "git@github.com:RSCOEN/aws-tf-module-igw.git"
+    source  =   "git@github.com:sce81/aws-tf-module-igw.git"
 ```
 
-### Usage
+##### Usage
 
-This module has a number of mandatory variables it expects to be passed into it.  
+    module "internet_gateway" {
+        source = "git@github.com:sce81/aws-tf-module-igw.git"
+        name                    = var.name
+        env                     = var.env
+        vpc_id                  = module.vpc.vpc_id
+    }
 
-```
-env
-vpc_id
-````
 
-addional tags can be appended using the following map
+addional tags can be appended using the following map values
 
-```
-extra_tags
-```
-
-the remaining variables are configured with sane defaults which can be overwritten by the parent.  
+        extra_tags
 
 
 ### Outputs
 
 The following values are outputted
 
-- aws_internet_gateway.main.id
+        aws_internet_gateway.main.id
 

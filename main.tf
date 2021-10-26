@@ -3,8 +3,8 @@ resource "aws_internet_gateway" "main" {
     
   tags = merge(
     local.common_tags,
-    map(
-      "Name", "${var.vpc_id}-${var.env}-igw"
-    )
+    tomap({
+      Name = "${var.vpc_id}-${var.name}-${var.env}-igw"
+    })
   )
 }
