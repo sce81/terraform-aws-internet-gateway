@@ -16,12 +16,6 @@ Terraform ~> 1.0.0
 ### Tested
 
 Terraform ~> 1.0.9
-### Installing
-
-This module should be called by a terraform environment configuration
-```  
-    source  =   "git@github.com:sce81/aws-tf-module-igw.git"
-```
 
 ##### Usage
 
