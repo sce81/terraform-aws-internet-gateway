@@ -16,6 +16,7 @@ Terraform ~> 1.0.0
 ### Tested
 
 Terraform ~> 1.0.9
+
 ### Installing
 
 This module should be called by a terraform environment configuration via github
@@ -24,9 +25,10 @@ This module should be called by a terraform environment configuration via github
 ```
 or Terraform Cloud
 ```
-      source           = "app.terraform.io/HashiCorp_AWS_Org/aws-module-igw/module"
+      source           = "app.terraform.io/HashiCorp_AWS_Org/module-internet-gateway/module"
       version          = "1.0.0"
 ```
+
 
 ##### Usage
 
