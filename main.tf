@@ -5,7 +5,6 @@ resource "aws_internet_gateway" "main" {
     local.common_tags,
     tomap({
       Name = "${var.name}-${var.env_name}-igw"
-      VPC  = var.vpc_id
     })
   )
 }
