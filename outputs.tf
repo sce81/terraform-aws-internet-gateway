@@ -1,3 +1,3 @@
 output "igw" {
-    value = aws_internet_gateway.main.id
+  value = aws_internet_gateway.main.id
 }

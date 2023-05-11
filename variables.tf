@@ -1,7 +1,7 @@
-variable "vpc_id"       {}
-variable "env"          {}
-variable "name"         {}
-variable "extra_tags"   {
-                            type = map
-                            default = {}
-                        }
+variable "vpc_id" {}
+variable "env_name" {}
+variable "name" {}
+variable "extra_tags" {
+  type    = map(any)
+  default = {}
+}
